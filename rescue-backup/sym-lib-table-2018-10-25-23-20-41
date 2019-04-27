@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Headphone-amplifier-rescue)(type Legacy)(uri "${KIPRJMOD}/Headphone amplifier-rescue.lib")(options "")(descr ""))
+)

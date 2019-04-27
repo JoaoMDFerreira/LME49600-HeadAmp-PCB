@@ -1,0 +1,183 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Headphone-amplifier-rescue:C-RESCUE-Headphone_amplifier
+#
+DEF Headphone-amplifier-rescue:C-RESCUE-Headphone_amplifier C 0 10 N Y 1 F N
+F0 "C" 0 100 40 H V L CNN
+F1 "Headphone-amplifier-rescue:C-RESCUE-Headphone_amplifier" 6 -85 40 H V L CNN
+F2 "" 38 -150 30 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ SM*
+ C?
+ C1-1
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 200 170 D 40 40 1 1 P
+X ~ 2 0 -200 170 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:CONN_01X02
+#
+DEF Headphone-amplifier-rescue:CONN_01X02 J 0 40 Y N 1 F N
+F0 "J" 0 150 50 H V C CNN
+F1 "Headphone-amplifier-rescue:CONN_01X02" 100 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Pin_Header_Straight_1X*
+ Pin_Header_Angled_1X*
+ Socket_Strip_Straight_1X*
+ Socket_Strip_Angled_1X*
+$ENDFPLIST
+DRAW
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 100 50 -100 0 1 0 N
+X P1 1 -200 50 150 R 50 50 1 1 P
+X P2 2 -200 -50 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:CONN_3
+#
+DEF Headphone-amplifier-rescue:CONN_3 K 0 40 Y N 1 F N
+F0 "K" -50 0 50 V V C CNN
+F1 "Headphone-amplifier-rescue:CONN_3" 50 0 40 V V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -100 150 100 -150 0 1 0 N
+X P1 1 -350 100 250 R 60 60 1 1 P I
+X PM 2 -350 0 250 R 60 60 1 1 P I
+X P3 3 -350 -100 250 R 60 60 1 1 P I
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:CP1-RESCUE-Headphone_amplifier
+#
+DEF Headphone-amplifier-rescue:CP1-RESCUE-Headphone_amplifier C 0 10 N N 1 F N
+F0 "C" 50 100 50 H V L CNN
+F1 "Headphone-amplifier-rescue:CP1-RESCUE-Headphone_amplifier" 50 -100 50 H V L CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ CP*
+ SM*
+$ENDFPLIST
+DRAW
+A 0 -200 180 563 1236 0 1 15 N 100 -50 -100 -50
+T 0 -50 100 80 0 0 0 + Normal 0 C C
+P 4 0 1 15 -100 50 100 50 50 50 50 50 N
+X ~ 1 0 200 150 D 40 40 1 1 P
+X ~ 2 0 -200 180 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:GND-RESCUE-Headphone_amplifier
+#
+DEF ~Headphone-amplifier-rescue:GND-RESCUE-Headphone_amplifier #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 0 30 H I C CNN
+F1 "Headphone-amplifier-rescue:GND-RESCUE-Headphone_amplifier" 0 -70 30 H I C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 4 0 1 0 -50 0 0 -50 50 0 -50 0 N
+X GND 1 0 0 0 U 30 30 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:LME49600
+#
+DEF Headphone-amplifier-rescue:LME49600 U 0 20 Y Y 1 F N
+F0 "U" 350 150 60 H V C CNN
+F1 "Headphone-amplifier-rescue:LME49600" 350 -100 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 1 0 -200 -200 -200 200 N
+P 2 0 1 0 -200 200 200 0 N
+P 2 0 1 0 100 -200 0 -100 N
+P 2 0 1 0 200 0 -200 -200 N
+X BW 1 100 -400 200 U 40 30 1 1 I
+X IN 2 -500 0 300 R 40 40 1 1 I
+X V- 3 -100 -400 250 U 40 30 1 1 I
+X ~ 4 500 0 300 L 40 40 1 1 O
+X V+ 5 -100 400 250 D 40 30 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:R-RESCUE-Headphone_amplifier
+#
+DEF Headphone-amplifier-rescue:R-RESCUE-Headphone_amplifier R 0 0 N Y 1 F N
+F0 "R" 80 0 40 V V C CNN
+F1 "Headphone-amplifier-rescue:R-RESCUE-Headphone_amplifier" 7 1 40 V V C CNN
+F2 "" -70 0 30 V V C CNN
+F3 "" 0 0 30 H V C CNN
+$FPLIST
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$ENDFPLIST
+DRAW
+S -40 150 40 -150 0 1 12 N
+X ~ 1 0 250 100 D 60 60 1 1 P
+X ~ 2 0 -250 100 U 60 60 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:TL072-RESCUE-Headphone_amplifier
+#
+DEF Headphone-amplifier-rescue:TL072-RESCUE-Headphone_amplifier U 0 20 Y Y 2 F N
+F0 "U" -50 200 60 H V L CNN
+F1 "Headphone-amplifier-rescue:TL072-RESCUE-Headphone_amplifier" -50 -250 60 H V L CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 4 0 1 6 -200 200 200 0 -200 -200 -200 200 f
+X V- 4 -100 -400 250 U 40 40 0 1 W
+X V+ 8 -100 400 250 D 40 40 0 1 W
+X ~ 1 500 0 300 L 40 40 1 1 O
+X - 2 -500 -100 300 R 40 40 1 1 I
+X + 3 -500 100 300 R 40 40 1 1 I
+X + 5 -500 100 300 R 40 40 2 1 I
+X - 6 -500 -100 300 R 40 40 2 1 I
+X ~ 7 500 0 300 L 40 40 2 1 O
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:VCC
+#
+DEF Headphone-amplifier-rescue:VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Headphone-amplifier-rescue:VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Headphone-amplifier-rescue:VEE
+#
+DEF Headphone-amplifier-rescue:VEE #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Headphone-amplifier-rescue:VEE" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VEE 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
